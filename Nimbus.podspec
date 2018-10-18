@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
-  s.name         = "Nimbus"
-  s.version      = "1.3.0"
+  s.name         = "mcNimbus"
+  s.version      = "0.1.0"
   s.summary      = "The iOS framework that grows only as fast as its documentation"
   s.description  = <<-DESC
   Nimbus is an iOS framework whose feature set grows only as fast as its documentation. By focusing
@@ -23,9 +23,9 @@ Pod::Spec.new do |s|
     "Hwee-Boon Yar" => "hboon@motionobj.com",
     "Stephane Moore" => "stephane.moore@gmail.com"
   }
-  s.social_media_url   = "http://twitter.com/NimbusKit"
+  s.social_media_url   = "https://github.com/machaomc/nimbus"
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "https://github.com/jverkoey/nimbus.git", :tag => s.version }
+  s.source       = { :git => "https://github.com/machaomc/nimbus.git", :tag => s.version }
   s.requires_arc = true
 
   s.subspec 'AttributedLabel' do |ss|
@@ -51,7 +51,7 @@ Pod::Spec.new do |s|
     ss.source_files = 'src/css/src'
     ss.dependency 'Nimbus/Core'
     ss.dependency 'Nimbus/Textfield'
-    ss.dependency 'AFNetworking', '~> 2.6'
+    # ss.dependency 'AFNetworking', '~> 3.1.0'
   end
 
   s.subspec 'Interapp' do |ss|
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   s.subspec 'NetworkImage' do |ss|
     ss.source_files = 'src/networkimage/src'
     ss.dependency 'Nimbus/Core'
-    ss.dependency 'AFNetworking', '~> 2.6'
+    # ss.dependency 'AFNetworking', '~> 3.1.0'
   end
 
   s.subspec 'Overview' do |ss|
