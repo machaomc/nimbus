@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "mcNimbus"
-  s.version      = "2.1.2"
+  s.version      = "2.1.3"
   s.summary      = "The iOS framework that grows only as fast as its documentation"
   s.description  = <<-DESC
   Nimbus is an iOS framework whose feature set grows only as fast as its documentation. By focusing
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'AttributedLabel' do |ss|
     ss.source_files = 'src/attributedlabel/src'
-    ss.dependency 'Nimbus/Core'
+    ss.dependency 'mcNimbus/Core'
   end
 
   s.subspec 'Core' do |ss|
@@ -39,53 +39,53 @@ Pod::Spec.new do |s|
 
   s.subspec 'Badge' do |ss|
     ss.source_files = 'src/badge/src'
-    ss.dependency 'Nimbus/Core'
+    ss.dependency 'mcNimbus/Core'
   end
 
   s.subspec 'Collections' do |ss|
     ss.source_files = 'src/collections/src'
-    ss.dependency 'Nimbus/Core'
+    ss.dependency 'mcNimbus/Core'
   end
 
   s.subspec 'CSS' do |ss|
     ss.source_files = 'src/css/src'
-    ss.dependency 'Nimbus/Core'
-    ss.dependency 'Nimbus/Textfield'
+    ss.dependency 'mcNimbus/Core'
+    ss.dependency 'mcNimbus/Textfield'
     # ss.dependency 'AFNetworking', '~> 3.1.0'
   end
 
   s.subspec 'Interapp' do |ss|
     ss.source_files = 'src/interapp/src'
-    ss.dependency 'Nimbus/Core'
+    ss.dependency 'mcNimbus/Core'
     ss.framework = 'CoreLocation'
   end
 
   s.subspec 'Launcher' do |ss|
     ss.source_files = 'src/launcher/src'
-    ss.dependency 'Nimbus/Core'
-    ss.dependency 'Nimbus/PagingScrollView'
+    ss.dependency 'mcNimbus/Core'
+    ss.dependency 'mcNimbus/PagingScrollView'
   end
 
   s.subspec 'Models' do |ss|
     ss.source_files = 'src/models/src'
-    ss.dependency 'Nimbus/Core'
+    ss.dependency 'mcNimbus/Core'
   end
 
   s.subspec 'NetworkControllers' do |ss|
     ss.source_files = 'src/networkcontrollers/src'
-    ss.dependency 'Nimbus/Core'
+    ss.dependency 'mcNimbus/Core'
   end
 
   s.subspec 'NetworkImage' do |ss|
     ss.source_files = 'src/networkimage/src'
-    ss.dependency 'Nimbus/Core'
+    ss.dependency 'mcNimbus/Core'
     # ss.dependency 'AFNetworking', '~> 3.1.0'
   end
 
   s.subspec 'Overview' do |ss|
     ss.source_files = 'src/overview/src'
-    ss.dependency 'Nimbus/Core'
-    ss.dependency 'Nimbus/Models'
+    ss.dependency 'mcNimbus/Core'
+    ss.dependency 'mcNimbus/Models'
     s.resource_bundles = {
       'Overview' => ['src/overview/resources/NimbusOverviewer.bundle/*']
     }
@@ -93,23 +93,23 @@ Pod::Spec.new do |s|
 
   s.subspec 'PagingScrollView' do |ss|
     ss.source_files = 'src/pagingscrollview/src'
-    ss.dependency 'Nimbus/Core'
+    ss.dependency 'mcNimbus/Core'
   end
 
   s.subspec 'Photos' do |ss|
     ss.source_files = 'src/photos/src'
-    ss.dependency 'Nimbus/Core'
-    ss.dependency 'Nimbus/PagingScrollView'
+    ss.dependency 'mcNimbus/Core'
+    ss.dependency 'mcNimbus/PagingScrollView'
   end
 
   s.subspec 'Textfield' do |ss|
     ss.source_files = 'src/textfield/src'
-    ss.dependency 'Nimbus/Core'
+    ss.dependency 'mcNimbus/Core'
   end
 
   s.subspec 'WebController' do |ss|
     ss.source_files = 'src/webcontroller/src'
-    ss.dependency 'Nimbus/Core'
+    ss.dependency 'mcNimbus/Core'
     s.resource_bundles = {
       'WebController' => ['src/webcontroller/resources/NimbusWebController.bundle/*']
     }
