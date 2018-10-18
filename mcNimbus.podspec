@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "mcNimbus"
-  s.version      = "2.1.1"
+  s.version      = "2.1.2"
   s.summary      = "The iOS framework that grows only as fast as its documentation"
   s.description  = <<-DESC
   Nimbus is an iOS framework whose feature set grows only as fast as its documentation. By focusing
